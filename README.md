@@ -1,12 +1,15 @@
 # Choropleth Grid
----
-This builds on the regular choropleth map which is just made using a count for each area. Rather than just plotting markers on a map, we can use the grid to group cases within a certain proximity together. This allows us to clearly see which groups within an area have more data.
 
-This is based off the code here: https://hautahi.com/rmaps
+This builds on the regular choropleth map which is just made using a count for each area. Rather than just plotting markers on a map, we can use the grid to group cases within a certain proximity together. This allows us to clearly see which groups within an area have more data.
 
 The visualisation requires two sets of data:
 - The shape file which acts as the boundaries
 - The data, with coordinates, in which you wish to group
+
+Combining these two sets we get results like this:
+![Choropleth Grid](https://github.com/epi-interactive/choropleth_grid/blob/master/choropleth_image.PNG)
+
+Demo can be found [here](https://shiny.epi-interactive.com/apps/choropleth_grid/)
 
 ### How it works
 ---
@@ -49,7 +52,8 @@ The visualisation requires two sets of data:
     ```
 - Finally we can render the map and style it as desired
  
-### Data Sources
+### Sources
 --- 
-- Sculpture Dataset: https://data-wcc.opendata.arcgis.com/datasets/wellington-city-sculptures
-- Wellington Shape File: https://data-wcc.opendata.arcgis.com/datasets/wellington-city-council-boundary
+- [Sculpture Dataset](https://data-wcc.opendata.arcgis.com/datasets/wellington-city-sculptures)
+- [Wellington Shape File](https://data-wcc.opendata.arcgis.com/datasets/wellington-city-council-boundary)
+- [Code Credit](https://hautahi.com/rmaps)
