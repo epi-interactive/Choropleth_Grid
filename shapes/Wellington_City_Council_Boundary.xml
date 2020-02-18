@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xalan="http://xml.apache.org/xalan" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.isotc211.org/2005/gmd">
+<fileIdentifier>
+<gco:CharacterString>999ffc19da904dad82c9278e67289102</gco:CharacterString>
+</fileIdentifier>
+<characterSet>
+<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+</characterSet>
+<hierarchyLevel>
+<MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+</hierarchyLevel>
+<hierarchyLevelName>
+<gco:CharacterString>dataset</gco:CharacterString>
+</hierarchyLevelName>
+<contact>
+<CI_ResponsibleParty>
+<role>
+<CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+</role>
+</CI_ResponsibleParty>
+</contact>
+<dateStamp>
+<gco:Date>2018-04-16</gco:Date>
+</dateStamp>
+<metadataStandardName>
+<gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+</metadataStandardName>
+<metadataStandardVersion>
+<gco:CharacterString>2007</gco:CharacterString>
+</metadataStandardVersion>
+<identificationInfo>
+<MD_DataIdentification>
+<citation>
+<CI_Citation>
+<title>
+<gco:CharacterString>Wellington City Council Boundary</gco:CharacterString>
+</title>
+<date gco:nilReason="missing"/>
+</CI_Citation>
+</citation>
+<abstract>
+<gco:CharacterString>This layer denotes the geographic boundaries of Wellington City Council governed areas.</gco:CharacterString>
+</abstract>
+<purpose>
+<gco:CharacterString>Wellington City Council Boundary</gco:CharacterString>
+</purpose>
+<credit>
+<gco:CharacterString>Wellington City Council, Attribution 4.0 International (CC BY 4.0)  </gco:CharacterString>
+</credit>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Wellington</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>WCC</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Election</gco:CharacterString>
+</keyword>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Wellington</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>WCC</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Election</gco:CharacterString>
+</keyword>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Wellington</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>WCC</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Election</gco:CharacterString>
+</keyword>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Wellington</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>WCC</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Election</gco:CharacterString>
+</keyword>
+</MD_Keywords>
+</descriptiveKeywords>
+<resourceConstraints>
+<MD_Constraints>
+<useLimitation>
+<gco:CharacterString>Liability
+
+Access
+to this Wellington City Council data is a free service offered by the
+Wellington City Council. Your use of this data is conditional upon your
+explicit acceptance of the terms and conditions set out in these Conditions of Use and
+is entirely at your own risk. The Council does not accept any responsibility or
+liability for any errors or omissions in this data or any liability for
+any damage or loss caused by your reliance on or use of the information
+contained on this data. Consequently, the Council excludes all liability for
+any injury, death, loss, damages, costs or expenses resulting directly or
+indirectly from the use of the GIS data and any maps or information derived
+from it.
+
+Accuracy statement
+
+This GIS
+data has been compiled from a number of sources and may not be an accurate,
+complete or correct representation of the actual property boundary locations or
+characteristics, buildings, structures, amenities, or any other information
+shown. This data is provided &amp;quot;as is&amp;quot; without warranty of any kind,
+either express or implied to the fullest extent permitted by law. The Council
+does not warrant that this data will be uninterrupted or error-free, that
+defects will be corrected, or that this site or the server that makes it
+available is free of any virus. The Council recommends that you independently
+verify the accuracy, currency and reliability of any information made available
+via this service and upon which you intend to rely. The GIS data on this site
+may be amended and updated by the Council without notification. There may be significant
+delays before data is updated to reflect changes in an area.
+
+Intellectual property
+
+The data
+presented may come from a variety of sources and some is the intellectual
+property of third parties. Unless stated otherwise, all intellectual property
+rights in, to and in respect of the information, data and materials appearing
+on the site (including copyright, trade marks, trade names and logos) are and
+remain the property of either the Wellington City Council or the third parties
+who have licensed their intellectual property to the Council. Information may
+only be used as permitted under the Copyright Act 1994.
+
+Technical support
+
+The
+Council does not provide technical assistance or support for any applications
+used to view this data. The Council may elect to discontinue this data without
+notice. Please note this data service may be unavailable at times without
+notice due to maintenance.
+
+Amendments
+
+The
+Council reserves the right to amend the Conditions of Use at
+its discretion. Your continued use of the site following such amendments will
+represent an agreement by you to be bound by the amended Conditions of
+Use.</gco:CharacterString>
+</useLimitation>
+</MD_Constraints>
+</resourceConstraints>
+<language gco:nilReason="missing"/>
+<characterSet>
+<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+</characterSet>
+<topicCategory>
+<MD_TopicCategoryCode>boundaries</MD_TopicCategoryCode>
+</topicCategory>
+<topicCategory>
+<MD_TopicCategoryCode>location</MD_TopicCategoryCode>
+</topicCategory>
+<topicCategory>
+<MD_TopicCategoryCode>planningCadastre</MD_TopicCategoryCode>
+</topicCategory>
+</MD_DataIdentification>
+</identificationInfo>
+<distributionInfo>
+<MD_Distribution>
+<transferOptions>
+<MD_DigitalTransferOptions>
+<onLine>
+<CI_OnlineResource>
+<linkage>
+<URL>http://services1.arcgis.com/CPYspmTk3abe6d7i/arcgis/rest/services/TLA_Boundaries/FeatureServer</URL>
+</linkage>
+</CI_OnlineResource>
+</onLine>
+</MD_DigitalTransferOptions>
+</transferOptions>
+</MD_Distribution>
+</distributionInfo>
+</MD_Metadata>
