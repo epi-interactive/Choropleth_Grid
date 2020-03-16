@@ -1,3 +1,9 @@
+##################################
+# Created by EPI-interactive
+# 18 Feb 2020
+# https://www.epi-interactive.com
+##################################
+
 library(leaflet)
 library(rgdal)
 library(sp)
