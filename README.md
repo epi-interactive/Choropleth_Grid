@@ -1,12 +1,12 @@
 # Choropleth Grid
 
-This builds on the regular choropleth map which is just made using a count for each area. Rather than just plotting markers on a map, we can use the grid to group cases within a certain proximity together. This allows us to clearly see which groups within an area have more data.
+Choropleth grids can be a useful customisation from standard choropleth map which displays counts for each area. The grid allows us to  group cases with similar values (such as case counts) together.
 
 The visualisation requires two sets of data:
 - The shape file which acts as the boundaries
-- The data, with coordinates, in which you wish to group
+- The data, with coordinates, which you like to display
 
-Combining these two sets we get results like this:
+Combining these two dataset, we can create a map like the one below (the example shows the number of sculptures in Wellington, the capital of New Zealand):
 ![Choropleth Grid](https://github.com/epi-interactive/choropleth_grid/blob/master/choropleth_image.PNG)
 
 Demo can be found [here](https://shiny.epi-interactive.com/apps/choropleth_grid/)
