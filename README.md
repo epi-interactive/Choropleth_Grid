@@ -6,7 +6,7 @@ The visualisation requires two sets of data:
 - The shape file which describes the area boundaries
 - The data, with coordinates, which you like to display
 
-Combining these two dataset, we can create a map like the one below (the example shows the number of sculptures in Wellington, the capital of New Zealand):
+Combining these two dataset, we can create a map like the one below:
 ![Choropleth Grid](https://github.com/epi-interactive/choropleth_grid/blob/master/choropleth_image.PNG)
 
 Demo can be found [here](https://shiny.epi-interactive.com/apps/choropleth_grid/)
