@@ -1,9 +1,9 @@
 # Choropleth Grid
 
-Choropleth grids can be a useful customisation from standard choropleth map which displays counts for each area. The grid allows us to  group cases with similar values (such as case counts) together.
+Choropleth grids can be a useful customisation from standard choropleth maps which display counts for each area. The grid allows us to  group cases with similar values (such as case counts) together.
 
 The visualisation requires two sets of data:
-- The shape file which acts as the boundaries
+- The shape file which describes the area boundaries
 - The data, with coordinates, which you like to display
 
 Combining these two dataset, we can create a map like the one below (the example shows the number of sculptures in Wellington, the capital of New Zealand):
