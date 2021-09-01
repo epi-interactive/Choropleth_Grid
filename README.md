@@ -11,7 +11,7 @@ Combining these two dataset, we can create a map like the one below:
 
 Demo can be found [here](https://shiny.epi-interactive.com/apps/choropleth_grid/)
 
-# How it works
+## How it works
 - Load in the shape file using readOGR from the rgdal package, this creates a SpatialPolygonsDataFrame 
 - Load in the data, using whichever read method is appropriate - here I've used read.csv
 - The coordinates from the data are also turned into a SpatialPointsDataFrame and projected to be the same as the shape file
@@ -51,7 +51,18 @@ Demo can be found [here](https://shiny.epi-interactive.com/apps/choropleth_grid/
     ```
 - Finally we can render the map and style it as desired
  
-# Sources
+## Sources
 - [Sculpture Dataset](https://data-wcc.opendata.arcgis.com/datasets/wellington-city-sculptures)
 - [Wellington Shape File](https://data-wcc.opendata.arcgis.com/datasets/wellington-city-council-boundary)
 - [Code Credit](https://hautahi.com/rmaps)
+
+
+
+
+---
+
+Code created by [Epi-interactive](https://www.epi-interactive.com) 
+
+As always, our expert team is here to help if you want custom training, would like to take your dashboards to the next level or just need an urgent fix to keep things running. Just get in touch for a chat.
+
+[https://www.epi-interactive.com/contact](https://www.epi-interactive.com/contact)
