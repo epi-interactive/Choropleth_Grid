@@ -1,0 +1,91 @@
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    padding:20px;
+    background-color: #00ADD8;
+    height: 100vh;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar img{
+    margin-top:auto;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    bottom:0;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+hr{
+    margin: 50px 0;
+}
+
+.control-label{
+     font-size: 24px;
+     font-weight: normal;
+}
+
+.shiny-input-container:not(.shiny-input-container-inline) {
+    width: 100%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+.irs--shiny .irs-bar {
+    border-top: 1px solid #006F81;
+    border-bottom: 1px solid #006F81;
+    background: #006F81;
+}
+
+.irs--shiny .irs-bar, .irs--shiny .irs-line {
+     top: 30px;
+}
+
+.irs--shiny .irs-min, .irs--shiny .irs-max {
+    color: #707070;
+    background-color: #DDDDDD;
+    font-size: 15px;
+}
+
+.irs--shiny .irs-single {
+    background-color: #017D86;
+    color:#FFFFFF;
+    font-size: 15px;
+}
+
+.irs--shiny .irs-grid-pol, .irs--shiny .irs-grid-pol.small {
+    background-color: #FFFFFF;
+}
+
+.irs--shiny .irs-grid-text  {
+ color:#FFFFFF;
+ font-size: 13px;
+}
+
+.irs--shiny .irs-handle {
+    top: 22px;
+}
+
+.irs-grid {
+    top: 38px;
+}
+
+.main{
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+}
+
+#gridMap{
+    margin: auto;
+}

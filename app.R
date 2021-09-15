@@ -10,26 +10,33 @@ library(sp)
 library(raster)
 library(rgeos)
 
-ui <- fluidPage(titlePanel("Choropleth Grid"),
-                sidebarLayout(
-                    sidebarPanel(
-                        sliderInput(
-                            "xSlider",
-                            "Horizontal Grid Count",
-                            min = 10,
-                            max = 70,
-                            value = 50
-                        ),
-                        sliderInput(
-                            "ySlider",
-                            "Vertical Grid Count",
-                            min = 10,
-                            max = 70,
-                            value = 50
-                        )
-                    ),
-                    mainPanel(leafletOutput("gridMap"))
-                ))
+ui <- fluidPage(
+    tags$head(
+        tags$link(rel = "stylesheet", type = "text/css", href = "css/style.css")
+    ),
+    div(class="col-xs-3 sidebar",
+        div(fluidRow(h1("Choropleth Grid")),
+        hr(),
+        sliderInput(
+            "xSlider",
+            "Horizontal Grid Count",
+            min = 10,
+            max = 70,
+            value = 50
+        ),
+        sliderInput(
+            "ySlider",
+            "Vertical Grid Count",
+            min = 10,
+            max = 70,
+            value = 50
+        )),
+        tags$img(src="images/Epi_Logo.png", width= "90%")
+    ),
+    div(class="col-xs-9 main",
+        leafletOutput("gridMap", height = "65%", width = "75%")
+    )
+)
 
 server <- function(input, output) {
     #Read in shape file
@@ -80,7 +87,7 @@ server <- function(input, output) {
                      na.color = "transparent")
         
         labelContent <- paste0(
-                sculptureCount$FID,
+                ifelse(!is.na(sculptureCount$FID), sculptureCount$FID, "No"),
                 ifelse(
                     sculptureCount$FID == 1 &
                         !is.na(sculptureCount$FID),
@@ -92,8 +99,7 @@ server <- function(input, output) {
         # Render the map
         leaflet(sculptureCount,
                 options = leafletOptions(minZoom = 11)) %>%
-            addProviderTiles("Hydda.Base",
-                             options = providerTileOptions(noWrap = TRUE)) %>%
+            addTiles() %>%
             addPolygons(
                 fillColor = ~ qpal(sculptureCount$FID),
                 weight = 1,
