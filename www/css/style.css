@@ -41,43 +41,43 @@ hr{
     padding-bottom: 20px;
 }
 
-.irs-bar {
-    border-top: 1px solid #006F81 !important;
-    border-bottom: 1px solid #006F81 !important;
-    background: #006F81 !important;
+.irs--shiny .irs-bar {
+    border-top: 1px solid #006F81;
+    border-bottom: 1px solid #006F81;
+    background: #006F81;
 }
 
-.irs-bar, .irs-line {
-     top: 30px !important;
+.irs--shiny .irs-bar, .irs--shiny .irs-line {
+     top: 30px;
 }
 
-.irs-min, .irs-max {
-    color: #707070 !important;
-    background-color: #DDDDDD !important;
-    font-size: 15px !important;
+.irs--shiny .irs-min, .irs--shiny .irs-max {
+    color: #707070;
+    background-color: #DDDDDD;
+    font-size: 15px;
 }
 
-.irs-single {
-    background-color: #017D86 !important;
-    color:#FFFFFF !important;
-    font-size: 15px !important;
+.irs--shiny .irs-single {
+    background-color: #017D86;
+    color:#FFFFFF;
+    font-size: 15px;
 }
 
-.irs-grid-pol, .irs-grid-pol.small {
-    background-color: #FFFFFF !important;
+.irs--shiny .irs-grid-pol, .irs--shiny .irs-grid-pol.small {
+    background-color: #FFFFFF;
 }
 
-.irs-grid-text  {
- color:#FFFFFF !important;
- font-size: 13px !important;
+.irs--shiny .irs-grid-text  {
+ color:#FFFFFF;
+ font-size: 13px;
 }
 
-.irs-handle {
-    top: 22px !important;
+.irs--shiny .irs-handle {
+    top: 22px;
 }
 
 .irs-grid {
-    top: 38px !important;
+    top: 38px;
 }
 
 .main{
