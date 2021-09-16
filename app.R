@@ -9,6 +9,7 @@ library(rgdal)
 library(sp)
 library(raster)
 library(rgeos)
+library(shiny)
 
 ui <- fluidPage(
     tags$head(
