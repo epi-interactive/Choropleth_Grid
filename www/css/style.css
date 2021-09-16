@@ -89,3 +89,7 @@ hr{
 #gridMap{
     margin: auto;
 }
+
+.info {
+    background: rgba(255,255,255);
+}

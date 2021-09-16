@@ -84,7 +84,7 @@ server <- function(input, output) {
         # define color bins
         qpal <- colorBin("YlOrRd",
                      sculptureCount$FID,
-                     bins = 5,
+                     bins = c(1,5,10,15,20,25,30,35),
                      na.color = "transparent")
         
         labelContent <- paste0(
