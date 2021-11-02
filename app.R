@@ -85,7 +85,7 @@ server <- function(input, output) {
         qpal <- colorBin("YlOrRd",
                      sculptureCount$FID,
                      bins = 6,
-                     na.color = "transparent",
+                     na.color = "#f0f0f0",
                      right = T)
         
         labelContent <- paste0(
@@ -118,6 +118,7 @@ server <- function(input, output) {
             addLegend(
                 values =  ~ sculptureCount$FID,
                 pal = qpal,
+                na.label = "None",
                 labFormat = function(type, cuts) {
                     #remove overlapping labels
                     sapply(2:length(cuts), function(i){
