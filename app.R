@@ -118,7 +118,7 @@ server <- function(input, output) {
             addLegend(
                 values =  ~ sculptureCount$FID,
                 pal = qpal,
-                na.label = "None",
+                na.label = "0",
                 labFormat = function(type, cuts) {
                     #remove overlapping labels
                     sapply(2:length(cuts), function(i){
