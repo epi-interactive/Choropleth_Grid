@@ -5,11 +5,10 @@
 ##################################
 
 library(leaflet)
-library(rgdal)
 library(sp)
 library(raster)
-library(rgeos)
 library(shiny)
+library(sf)
 
 ui <- fluidPage(
     tags$head(
@@ -41,7 +40,8 @@ ui <- fluidPage(
 
 server <- function(input, output) {
     #Read in shape file
-    shapeData <- readOGR("shapes/Wellington_City_Council_Boundary.shp")
+    shapeData_raw <- st_read("shapes/Wellington_City_Council_Boundary.shp")  
+    shapeData <- sf::as_Spatial(shapeData_raw)
     
     #Read in data
     data <- read.csv("data/Wellington_City_Sculptures.csv", stringsAsFactors = F)
@@ -63,23 +63,18 @@ server <- function(input, output) {
         # give it the same projection as shapeData
         projection(shapeRaster) <- CRS(proj4string(shapeData))
         # convert into polygon
-        shapePoly <- as(shapeRaster, 'SpatialPolygonsDataFrame') 
-        
-        
+        shapePoly <- rasterToPolygons(shapeRaster)
+
         # Clip grid to match the general area of the shapeData
-        clip <- shapePoly[shapeData, ]
+        clip <- crop(shapePoly, shapeData)
         
         # use the shapeData boundaries to create a better outline for the grid
-        map <- gIntersection(clip,
-                          shapeData,
-                          byid = TRUE,
-                          drop_lower_td = TRUE)
+        map <- raster::intersect(clip, shapeData)
         
         #match data count to grid
         sculptureCount <- aggregate(x = data["FID"],
                                     by = map,
                                     FUN = length)
-        
         
         # define color bins
         qpal <- colorBin("YlOrRd",
@@ -103,7 +98,7 @@ server <- function(input, output) {
                 options = leafletOptions(minZoom = 11)) %>%
             addTiles() %>%
             addPolygons(
-                fillColor = ~ qpal(sculptureCount$FID),
+                fillColor = ~qpal(sculptureCount$FID),
                 weight = 1,
                 color = "white",
                 fillOpacity = 0.8,

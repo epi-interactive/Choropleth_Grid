@@ -35,15 +35,15 @@ Demo can be found [here](https://shiny.epi-interactive.com/apps/choropleth_grid/
 	- the grid should then be projected to fit the shape and converted into a polygon
 	    ``` r 
         projection(shapeRaster) <- CRS(proj4string(shapeData))
-        shapePoly <- as(shapeRaster, 'SpatialPolygonsDataFrame') 
+        shapePoly <- rasterToPolygons(shapeRaster)
         ```
 - Clip the grid to match the general area of the shapeData
     ``` r 
-    clip <- shapePoly[shapeData, ]
+    clip <- crop(shapePoly, shapeData)
     ```
 - Finer borders on the grid are created by finding the intersection of the shape and the grid
     ``` r 
-    map <- gIntersection(clip, shapeData, byid = TRUE, drop_lower_td = TRUE) 
+    map <- raster::intersect(clip, shapeData)
     ```
 - The grid is then coloured using the aggregate function, using one of the data's column aggregated by the trimmed grid. 
     ``` r 
