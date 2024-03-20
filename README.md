@@ -9,7 +9,7 @@ The visualisation requires two sets of data:
 Combining these two dataset, we can create a map like the one below:
 ![Choropleth Grid](https://github.com/epi-interactive/choropleth_grid/blob/master/choropleth_image.PNG)
 
-Demo can be found [here](https://shiny.epi-interactive.com/apps/choropleth_grid/)
+Demo can be found [here](https://rshiny2.epi-interactive.com/apps/choropleth_grid/)
 
 ## How it works
 - Load in the shape file using readOGR from the rgdal package, this creates a SpatialPolygonsDataFrame 
