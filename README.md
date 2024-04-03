@@ -7,12 +7,12 @@ The visualisation requires two sets of data:
 - The data, with coordinates, which you like to display
 
 Combining these two dataset, we can create a map like the one below:
-![Choropleth Grid](https://github.com/epi-interactive/choropleth_grid/blob/master/choropleth_image.PNG)
+![Choropleth Grid](choropleth_image.PNG)
 
-Demo can be found [here](https://shiny.epi-interactive.com/apps/choropleth_grid/)
+Demo can be found [here](https://rshiny2.epi-interactive.com/apps/choropleth_grid/)
 
 ## How it works
-- Load in the shape file using readOGR from the rgdal package, this creates a SpatialPolygonsDataFrame 
+- Load in the shape file using read_st from the sf package, this is cast to a SpatialPolygonsDataFrame 
 - Load in the data, using whichever read method is appropriate - here I've used read.csv
 - The coordinates from the data are also turned into a SpatialPointsDataFrame and projected to be the same as the shape file
     ``` r
